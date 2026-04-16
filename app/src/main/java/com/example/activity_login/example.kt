@@ -29,15 +29,12 @@ class example : AppCompatActivity() {
 //            Toast.makeText(this,
 //                "Welcome ${editText.text}",
 //                Toast.LENGTH_LONG).show()
-            var text = """
-                First Name: ${fname.text}
-                Last Name: ${lname.text}
-                ID Number: ${id.text}
-                Course: ${course.text}
-                Year: ${year.text}
-                """.trimIndent()
             var intent = Intent(this, Home::class.java)
-            intent.putExtra("INFO", text)
+            intent.putExtra("FIRST", "First Name: ${fname.text}")
+            intent.putExtra("LAST", "Last Name: ${lname.text}")
+            intent.putExtra("ID", "ID Number: ${id.text}")
+            intent.putExtra("COURSE","Course: ${course.text}")
+            intent.putExtra("YEAR", "Year: ${year.text}")
             startActivity(intent)
         }
 
