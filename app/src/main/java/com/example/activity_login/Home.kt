@@ -13,7 +13,7 @@ class Home : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_home)
         var textView1 = findViewById<TextView>(R.id.txtName1)
-        var textView2 = findViewById<TextView>(R.id.txtName3)
+        var textView2 = findViewById<TextView>(R.id.txtName2)
         var textView3 = findViewById<TextView>(R.id.txtName3)
         var textView4 = findViewById<TextView>(R.id.txtName4)
         var textView5 = findViewById<TextView>(R.id.txtName5)
@@ -24,9 +24,9 @@ class Home : AppCompatActivity() {
         var year = intent.getStringExtra("YEAR")
 
         textView1.text = fname.toString()
-        textView2.text = fname.toString()
-        textView3.text = fname.toString()
-        textView4.text = fname.toString()
-        textView5.text = fname.toString()
+        textView2.text = lname.toString()
+        textView3.text = id.toString()
+        textView4.text = course.toString()
+        textView5.text = year.toString()
     }
 }
